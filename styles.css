@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Added global transition for smooth effect */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+    padding-bottom: 50px;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 60px 0; /* Increased padding for a more spacious feel */
+    border-bottom: 5px solid #fff;
+    position: relative;
+}
+
+header h1 {
+    font-size: 4rem; /* Larger font size */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 800; /* Bolder font weight */
+    letter-spacing: 2px; /* Added letter-spacing for visual appeal */
+}
+
+header p {
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: 300; /* Lighter weight for better contrast with h1 */
+}
+
+nav {
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding for compact nav */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transition for smooth hover */
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+section {
+    padding: 60px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Updated profile image styling */
+#about img.profile-img {
+    width: 300px; /* Larger profile image */
+    height: 300px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid #2575fc; /* Thicker border around image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for image */
+}
+
+.project {
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.project:hover {
+    transform: translateY(-8px); /* Enhanced hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.project h3 {
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.project p {
+    margin: 15px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.project a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #6a11cb; /* Hover color change */
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+footer {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* Experience Section Styling */
+#experience ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    gap: 20px; /* Use grid layout for cleaner spacing */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+}
+
+#experience ul li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#experience ul li:hover {
+    transform: translateY(-5px); /* Hover effect for experience items */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#experience ul li strong {
+    font-size: 1.2rem;
+    color: #2575fc;
+    font-weight: 700;
+}
+
+#experience ul li p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+    .project h3 {
+        font-size: 1.7rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project {
+        margin-bottom: 30px;
+    }
+
+    .project h3 {
+        font-size: 1.5rem;
+    }
+
+    #experience ul li {
+        margin-bottom: 15px;
+    }
+}
